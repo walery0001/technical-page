@@ -1,7 +1,60 @@
-body{
-	background-color: rgba(30, 27, 26, 1);
-	color: white;
 
-}
-a {color: white;
-	text-decoration: none;}
+#navbar
+	{
+		float: left;
+		color:white;
+		background-color: rgba(0, 0, 0, 1);
+		width: 20%;
+		height: 100%;
+
+	}
+#navbar header 
+	{
+		text-align: center;
+		font-size: 2em;
+		padding-top: 1.5em;
+
+	}
+li
+	{
+	
+		font-size: 1.5em;
+		list-style: none;
+		line-height: 1.3em;
+		/*background-color: gray;*/
+		
+	}	
+
+a 
+	{
+		color: white;
+		text-decoration: none;
+
+	
+		margin-left:0px; 
+		
+	}	
+
+a:hover
+	{
+		animation: mover ; 
+		animation-duration: 2s;
+		background-color: red;
+		margin-left:10px; 
+		animation-fill-mode:forwards;
+
+	}	
+@keyframes mover
+	{
+		from {margin-left:0px;}
+		to {margin-left:50px;}
+	}	
+
+#main-doc 
+	{
+		color:white;
+		background-color: rgba(27, 26, 24, 1);
+		float: left;
+		width: 80%;
+		height: 100%;
+	}
