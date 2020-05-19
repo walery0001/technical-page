@@ -1,4 +1,12 @@
+code
+	{
+		background-color: rgba(79, 74, 74, 1);
+		padding: 10px 10px 10px 10px;
+		display: block;
+		margin-top: 15px;
+		
 
+	}
 #navbar
 	{
 		float: left;
@@ -6,6 +14,7 @@
 		background-color: rgba(0, 0, 0, 1);
 		width: 20%;
 		height: 100%;
+		overflow: auto;
 
 	}
 #navbar header 
@@ -13,6 +22,7 @@
 		text-align: center;
 		font-size: 2em;
 		padding-top: 1.5em;
+	
 
 	}
 li
@@ -20,7 +30,7 @@ li
 	
 		font-size: 1.5em;
 		list-style: none;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		/*background-color: gray;*/
 		
 	}	
@@ -30,8 +40,8 @@ a
 		color: white;
 		text-decoration: none;
 
-	
-		margin-left:0px; 
+		/*background-color: green;*/
+		/*margin-left:0px;*/
 		
 	}	
 
@@ -39,8 +49,8 @@ a:hover
 	{
 		animation: mover ; 
 		animation-duration: 2s;
-		background-color: red;
-		margin-left:10px; 
+	/*	background-color: red;*/
+	/*	margin-left:10px; */
 		animation-fill-mode:forwards;
 
 	}	
@@ -56,5 +66,19 @@ a:hover
 		background-color: rgba(27, 26, 24, 1);
 		float: left;
 		width: 80%;
-		height: 100%;
+		height:100%;
+		overflow: auto;
+
 	}
+
+	h1 {text-align: center;}
+
+.main-doc-text
+	{
+		width: 90%;
+		font-size: 20px;
+		/*background-color: red;*/
+		margin:0 auto; 
+		padding-top: 10px;
+
+	}	
