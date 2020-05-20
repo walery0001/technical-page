@@ -16,11 +16,11 @@
   <header>TOPICS</header>
  <ul>
 
-    <li><a class="nav-link" href="#Introduction" top>Introduction</a></li>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li><a class="nav-link" href="#Hypertext_Markup_Language">Hypertext Markup Language</a></li>
     <li><a class="nav-link" href="#Cascading_Style_Sheets">Cascading Style Sheets</a></li>
     <li><a class="nav-link" href="#Language_JavaScript">Language JavaScript</a></li>
-    <li><a class="nav-link" href="#summary_of_the_above_issues">Summary of the above issues</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
  </ul>   
   </nav>
  
@@ -49,7 +49,7 @@
 &lt;head><br>
   &lt;meta charset="utf-8"><br>
 
-  &lt;title>Example</title><br>
+  &lt;title>Example&lt;/title><br>
 
   &lt;style> <br>
         h1 { <br>
@@ -105,43 +105,139 @@
     HTML stands for Hyper Text Markup Language. It is used to design web pages using markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. Markup language is used to define the text document within tag which defines the structure of web pages. This language is used to annotate text so that a machine can understand it and manipulate text accordingly.</p>
   <p class="main-doc-text">
     At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document, structure a document into logical sections , and embed content such as images and videos into a page.</p>
+  <p class="main-doc-text"> 
+    HTML uses predefined tags and elements which tells the browser about content display property.</p>
+
+    <!--     HTML normal text -->
+  <p class="main-doc-text"> 
+      <code>&lt;b>some text&lt;/b&gt;</code>
+  </p> 
+  <p class="main-doc-text">
+     Where &lt;b> is the Opening Tag and &lt;/b&gt; Closing Tag.
+  </p>
+  <p class="main-doc-text">
+    HTML page structure.<br> The Basic structure of HTML contain some elements like head, title, body, … etc. These elements are used to build the blocks of web pages. 
+  </p>
+          <!--     HTML normal text -->
+  <p class="main-doc-text">
+  <code>        
+    &lt;!DOCTYPE html&gt;<br>
+
+&lt;head><br>
+  &lt;meta charset="utf-8"><br>
+  &lt;title>Example&lt;/title><br>
+&lt;/head><br>
+&lt;body> <br>
+        &lt;h1>Topic&lt;/h1> <br>
+        &lt;p>Example Text&lt;/p> <br>
+    &lt;/body> <br>
+    &lt;/html>
+
+  </code>
+</p>
+<p class="main-doc-text">
+  <b>&lt;!DOCTYPE html&gt;</b>This tag is used to tells the HTML version. <br>
+  <b>&lt;html&gt;</b>Root element and used to wrap all the code.<br>
+  <b>&lt;head&gt;</b> Head tag contains metadata, title, page CSS etc.<br>
+  <b>&lt;body&gt;</b>  Body tag is used to enclosed all the data which a web page has from texts to links. All of the content that you see rendered in the browser is contained within this element.<br>
 </section>
   <!--                         CSS          -->
 <section class="main-section" id="Cascading_Style_Sheets">
   <header> 
-  <h1>Cascading Style Sheets</h1></header>    
+  <h1>Cascading Style Sheets</h1></header>
+<p class="main-doc-text"> 
+  Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page.</p>
+  <p class="main-doc-text"> 
+  A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document.
+A style rule set consists of a selector and declaration block.<br>
+Selector => h1<br>
+Declaration => {color:blue;font size:12px;} <br>
+The selector points to the HTML element you want to style.<br>
+The declaration block contains one or more declarations separated by semicolons.
+</p><br><p class="main-doc-text">In the following example all p elements will be center-aligned, with a blue text color:
+  <code>p { <br>
+    color: blue; <br>
+    text-align: center; <br>
+    }</code></p>
+
+<p class="main-doc-text">THE ID SELECTOR</p>
+<p class="main-doc-text">
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element should be unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+The style rule below will be applied to the HTML element with id=”para1″:
+<code>#para1 {  <br>
+    text-align: center;  <br>
+    color: red; <br>
+} </code></p>
+
+
+
+
+
+
 </section>
   <!--                         JavaScript          -->
 <section class="main-section" id="Language_JavaScript">
   <header> 
    <h1>Language JavaScript</h1>
-
-
   </header>  
- 
+<p class="main-doc-text">  
+  JavaScript was initially created to “make web pages alive”.
+The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run. In this aspect, JavaScript is very different from another language called Java. Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine. </p>
+<p class="main-doc-text"> 
+JavaScript programs can be inserted into any part of an HTML document with the help of the &lt;script> tag.
+<code>&lt;script><br>
+    alert( 'Hello, world!' );<br>
+  &lt;/script> </code></p>
+<p class="main-doc-text">Variables</p>
+<p class="main-doc-text">A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+To create a variable in JavaScript, use the let keyword.
+The statement below creates a variable with the name “message”:
+<code> let message;</code>
+Now, we can put some data into it by using the assignment operator = :
+<code> let message;<br>message = 'Hello';</code></p>
+<p class="main-doc-text">Data types</p>
+<p class="main-doc-text">There are eight basic data types in JavaScript. Most popular is Number and String</p>
+<p class="main-doc-text">Number<br>
+The number type represents both integer and floating point numbers.
+There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.
+<code>let n = 4 * 5;<br>console.log(n) // n is 20 </code></p>
+<p class="main-doc-text">String<br>
+A string in JavaScript must be surrounded by quotes.
+<code>let str = "Hello";</code></p>
+<p class="main-doc-text">Functions</p>
+<p class="main-doc-text">Quite often we need to perform a similar action in many places of the script. Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.<br>To create a function we can use a function declaration.
+<code>function showMessage() {<br><br>
+  alert( 'Hello everyone!' );<br>}</code><br>
+  The call showMessage() executes the code of the function.
+
+  <code>function showMessage() {<br><br>
+  alert( 'Hello everyone!' );<br>}<br>
+  showMessage()</code></p>
 </section>
   
-<section class="main-section" id="summary_of_the_above_issues">
+<section class="main-section" id="Reference">
   <header> 
-  <h1>Summary of the above issues</h1> </header>  
-    <p>dom_ja_ds</p>
-    <p>
+  <h1>Reference</h1> </header>  
+  <p class="main-doc-text">All the documentation in this page is taken from
+  <br>
   <ul>
-    <li>1 </li>
-    <li> 2</li>
-    <li>3 </li>
-    <li>4 </li>
-    <li>5 </li>
+    <li><a class="reference-link" href="https://javascript.info/">javascript.info</a></li>
+     <li><a  class="reference-link" href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a></li>
+      <li><a  class="reference-link" href="https://www.w3schools.com/">w3schools</a></li>
+     <li><a  class="reference-link" href="https://en.wikipedia.org/wiki/JavaScript/">wikipedia</a></li>  
+       <li><a  class="reference-link" href="https://stackoverflow.com/">stackoverflow</a></li>
+   
+
   </ul>
-    </p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
 
-
+ </p>
+  
 </section>
 </main>
 
 </body>
+
 </html>
